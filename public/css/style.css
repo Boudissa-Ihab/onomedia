@@ -43,3 +43,147 @@ input::-webkit-file-upload-button {
 td {
     cursor: pointer;
 }
+
+/* Add elements in "add project" page */
+.list-unstyled{
+	padding-left: 20px;
+    list-style: none;
+}
+
+.attributed-stats-list{
+	white-space: nowrap;
+	flex-wrap: wrap;
+}
+
+.attributed-stats-list button{
+	padding: 6px 5px 6px 15px;
+	margin-right: 15px;
+	background-color: #ebebeb;
+	border-radius: 4px;
+	text-transform: capitalize;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 500;
+	color: #525f7f;
+	margin-bottom: 10px;
+    border-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.attributed-stats-list button span{
+	margin-left: -10px;
+}
+
+/********************************************/
+
+/***** Start Slider *****/
+.main-img-wrapper{
+	width: 460px;
+	height: auto;
+	overflow: hidden;
+	padding: 10px;
+	border:1px solid #ebebeb;
+}
+
+.main-img-wrapper img{
+	width: 100%;
+	height: auto;
+}
+
+.img-thumbs .img-thumbs-item{
+	width: 160px;
+	height: 160px;
+	padding: 10px;
+	overflow: hidden;
+	cursor:pointer;
+	margin-right: 15px;
+}
+
+.img-thumbs .img-thumbs-item img{
+	width: 100%;
+	height: auto;
+}
+
+.main-img-wrapper-carousel .item {
+	margin: 5px;
+	color: #fff;
+	border-radius: 3px;
+	text-align: center;
+}
+.img-thumbs-carousel .item {
+	margin: 5px;
+	color: #fff;
+	border-radius: 3px;
+	text-align: center;
+	cursor: pointer;
+}
+.img-thumbs-carousel .item h1 {
+	font-size: 18px;
+}
+.img-thumbs-carousel .current .item {
+	border-bottom:2px solid #2e8bb8;
+	border-radius: 0px;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+	transition: all 0.3s ease;
+}
+.owl-theme .owl-nav [class*="owl-"].disabled:hover {
+	border:1px solid #d6d6d6;
+}
+.main-img-wrapper-carousel.owl-theme {
+	position: relative;
+}
+.main-img-wrapper-carousel.owl-theme .owl-next,
+.main-img-wrapper-carousel.owl-theme .owl-prev {
+	font-size: 16px;
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
+	color: #2e8bb8 ;
+	margin-top: -20px;
+	position: absolute;
+	top: 50%;
+}
+
+.main-img-wrapper-carousel.owl-theme .owl-next:focus,
+.main-img-wrapper-carousel.owl-theme .owl-prev:focus{
+	outline: none;
+}
+.main-img-wrapper-carousel.owl-theme .owl-prev {
+	left: 10px;
+}
+.main-img-wrapper-carousel.owl-theme .owl-next {
+	right: 10px;
+}
+
+.delet-btn{
+	position: absolute;
+	top: 0;
+	right: 0px;
+	padding:0px;
+	opacity: 0;
+	width: 26px;
+	height: 26px;
+	background-color: #f8514b;
+	color: #ffffff;
+	cursor: pointer;
+	border:0px;
+	text-transform: capitalize;
+	transition: 0.3s all ease-in-out;
+}
+
+.img-thumbs .item:hover .delet-btn{
+	opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+	.delet-btn{
+		opacity: 1;
+	}
+	.main-img-wrapper{
+		width:360px;
+	}
+}
+/***** End Slider *****/
