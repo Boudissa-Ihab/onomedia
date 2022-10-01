@@ -20,19 +20,19 @@
                 <table class="table table-hover my-0">
                     <thead>
                         <tr>
-                            <th class="d-none d-xl-table-cell">Nom</th>
-                            <th class="d-none d-xl-table-cell">Adresse mail</th>
-                            <th class="d-none d-xl-table-cell">Numéro de téléphone</th>
-                            <th class="d-none d-md-table-cell" style="text-align: center;">Actions</th>
+                            <th class="d-none d-sm-table-cell">Nom</th>
+                            <th class="d-none d-sm-table-cell">Adresse mail</th>
+                            <th class="d-none d-sm-table-cell">Numéro de téléphone</th>
+                            <th class="d-none d-sm-table-cell" style="text-align: center;">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach($this->admins as $admin)
                             <tr>
-                                <td class="d-none d-xl-table-cell">{{ $admin->name }}</td>
-                                <td class="d-none d-xl-table-cell">{{ $admin->email }}</td>
-                                <td class="d-none d-xl-table-cell">{{ $admin->phone }}</td>
-                                <td class="d-none d-md-table-cell" style="text-align: center;">
+                                <td class="d-none d-sm-table-cell">{{ $admin->name }}</td>
+                                <td class="d-none d-sm-table-cell">{{ $admin->email }}</td>
+                                <td class="d-none d-sm-table-cell">{{ $admin->phone }}</td>
+                                <td class="d-none d-sm-table-cell" style="text-align: center;">
                                     {{-- <button class="btn btn-info btn-sm"><i class="align-middle" data-feather="info"></i></button> --}}
                                     @if (auth()->id() != $admin->id)
                                         <button class="btn btn-danger btn-sm"
