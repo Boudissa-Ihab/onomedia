@@ -5,15 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ContactUs extends Model
+class Category extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'name',
-        'email',
-        'subject',
-        'message',
-        'read_at'
+        'name'
     ];
+
+    public function projects()
+    {
+        return $this->belongsToMany(Project::class, "category_project");
+    }
 }

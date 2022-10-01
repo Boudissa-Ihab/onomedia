@@ -1,6 +1,6 @@
 <div class="d-table-cell align-middle">
     <div class="text-center mt-4">
-        <h1 class="h2">Dashboard ONOMEDIA</h1>
+        <h1 class="h2">Dashboard @setting('app_name', "Ono Design")</h1>
         <p class="lead"></p>
     </div>
     <div class="card">

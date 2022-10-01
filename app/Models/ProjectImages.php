@@ -5,15 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ContactUs extends Model
+class ProjectImages extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'name',
-        'email',
-        'subject',
-        'message',
-        'read_at'
+        'url'
     ];
+
+    public function project()
+    {
+        return $this->belongsTo(Project::class);
+    }
 }

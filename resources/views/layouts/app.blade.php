@@ -5,20 +5,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Site vitrine d'Onomedia">
+    <meta name="description" content="Site vitrine d'Ono Design">
     <meta name="author"
         content="Boudissa Ihab
         Github : https://github.com/Boudissa-Ihab
         Linkedin : https://www.linkedin.com/in/ihab-boudissa-727346176/">
-    <meta name="keywords" content="onomedia, content, advertisement, design, logos">
-    <title>Onomedia</title>
+    <meta name="keywords" content="ono design, content, advertisement, design, logos">
+    <title>@setting('app_name', "Ono Design")</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
-    <script src="//unpkg.com/alpinejs" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <!-- Alpine JS -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     @livewireStyles
 </head>
 
@@ -27,7 +30,7 @@
         <nav id="sidebar" class="sidebar js-sidebar">
             <div class="sidebar-content js-simplebar">
                 <a class="sidebar-brand" href="{{ route('admin.dashboard') }}">
-                    <span class="align-middle">Onomedia</span>
+                    <span class="align-middle">@setting('app_name', "Ono Design")</span>
                 </a>
 
                 <ul class="sidebar-nav">
@@ -40,6 +43,20 @@
                             <i class="align-middle" data-feather="layout"></i>
                             <span
                                 class="align-middle">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item {{ Request::is('admin/categories/*') || Request::is('admin/categories') ? 'active' : '' }}">
+                        <a class="sidebar-link" href="{{ route('admin.categories') }}">
+                            <i class="align-middle" data-feather="server"></i>
+                            <span class="align-middle">Catégories</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item {{ Request::is('admin/projects/*') || Request::is('admin/projects') ? 'active' : '' }}">
+                        <a class="sidebar-link" href="{{ route('admin.projects') }}">
+                            <i class="align-middle" data-feather="folder"></i>
+                            <span class="align-middle">Projets</span>
                         </a>
                     </li>
 
@@ -198,7 +215,7 @@
                         <div class="col-6 text-start">
                             <p class="mb-0">
                                 <a class="text-muted" href="javascript:void(0)">
-                                    <strong>Onomedia {{ date("Y") }} </strong></a> &copy;
+                                    <strong>@setting('app_name', "Ono Design") {{ date("Y") }} </strong></a> &copy;
                             </p>
                         </div>
                         {{-- <div class="col-6 text-end">
@@ -223,9 +240,13 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     @include('sweetalert::alert')
     @livewireScripts
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/slider.js') }}"></script>
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
             Livewire.on('triggerDelete', (

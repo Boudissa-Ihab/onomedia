@@ -13,13 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('contact_us', function (Blueprint $table) {
+        Schema::create('project_images', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->nullable();
-            $table->string('email');
-            $table->string('subject');
-            $table->text('message');
-            $table->timestamp('read_at');
+            $table->string('url');
+            $table->foreignId('project_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -31,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('contact_us');
+        Schema::dropIfExists('project_images');
     }
 };

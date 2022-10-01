@@ -13,31 +13,33 @@
                 <table class="table table-hover my-0">
                     <thead>
                         <tr>
-                            <th class="d-none d-xl-table-cell">Nom</th>
-                            <th class="d-none d-xl-table-cell">Adresse mail</th>
-                            <th class="d-none d-xl-table-cell">Message</th>
-                            <th class="d-none d-xl-table-cell">Status</th>
-                            <th class="d-none d-md-table-cell" style="text-align: center;">Actions</th>
+                            <th class="d-none d-sm-table-cell">Nom</th>
+                            <th class="d-none d-sm-table-cell">Adresse mail</th>
+                            <th class="d-none d-sm-table-cell">Sujet</th>
+                            <th class="d-none d-sm-table-cell">Message</th>
+                            <th class="d-none d-sm-table-cell">Status</th>
+                            <th class="d-none d-sm-table-cell" style="text-align: center;">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach($this->messages as $message)
                             <tr>
-                                <td class="d-none d-xl-table-cell" wire:click="goToDetails({{ $message->id }})">
+                                <td class="d-none d-sm-table-cell" wire:click="goToDetails({{ $message->id }})">
                                     @if($message->name != null)
                                         {{ $message->name }}
                                     @else
                                         /
                                     @endif
                                 </td>
-                                <td class="d-none d-xl-table-cell" wire:click="goToDetails({{ $message->id }})">{{ $message->email }}</td>
-                                <td class="d-none d-xl-table-cell" wire:click="goToDetails({{ $message->id }})">{{ Str::limit($message->message, 70) }}</td>
+                                <td class="d-none d-sm-table-cell" wire:click="goToDetails({{ $message->id }})">{{ $message->email }}</td>
+                                <td class="d-none d-sm-table-cell" wire:click="goToDetails({{ $message->id }})">{{ $message->subject }}</td>
+                                <td class="d-none d-sm-table-cell" wire:click="goToDetails({{ $message->id }})">{{ Str::limit($message->message, 70) }}</td>
                                 @if($message->read_at == null)
                                     <td wire:click="goToDetails({{ $message->id }})"><span class="badge bg-danger">Non lu</span></td>
                                 @else
                                     <td wire:click="goToDetails({{ $message->id }})"><span class="badge bg-success">Lu</span></td>
                                 @endif
-                                <td class="d-none d-md-table-cell" style="text-align: center;">
+                                <td class="d-none d-sm-table-cell" style="text-align: center;">
                                     <button class="btn btn-danger btn-sm"
                                         wire:click.prevent="$emit('triggerDelete', {{ $message->id }})">
                                         <i class="align-middle" data-feather="trash-2"></i>
