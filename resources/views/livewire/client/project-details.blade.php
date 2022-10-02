@@ -24,7 +24,7 @@
                                 <div class="swiper-wrapper align-items-center">
                                     @foreach($project->images as $image)
                                         <div class="swiper-slide">
-                                            <img src="{{ asset('projects/' . $project->name . '/' . $image->url) }}" alt="{{ $project->name }}">
+                                            <img src="{{ asset('storage/projects/' . $project->name . '/' . $image->url) }}" alt="{{ $project->name }}">
                                         </div>
                                     @endforeach
                                 </div>

@@ -11,6 +11,7 @@
         Github : https://github.com/Boudissa-Ihab
         Linkedin : https://www.linkedin.com/in/ihab-boudissa-727346176/">
     <meta name="keywords" content="ono design, content, advertisement, design, logos">
+    <link href="{{ asset("storage/logo/logo.webp") }}" rel="icon">
     <title>@setting('app_name', "Ono Design")</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />

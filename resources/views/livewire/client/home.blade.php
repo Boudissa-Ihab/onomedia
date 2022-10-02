@@ -54,7 +54,7 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="{{ asset('images/img/about.jpg') }}') }}" class="img-fluid" alt="">
+            <img src="{{ asset('images/img/about.jpg') }}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
             <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
@@ -234,7 +234,7 @@
               @foreach($project->categories as $category) {{ $category->name }} @endforeach">
               <div class="portfolio-wrap">
                 @if($project->images()->first())
-                    <img src="{{ asset('projects/' . $project->name .'/' . $project->images()->first()->url) }}" class="img-fluid" alt="{{ $project->name }}">
+                    <img src="{{ asset('storage/projects/' . $project->name .'/' . $project->images()->first()->url) }}" class="img-fluid" alt="{{ $project->name }}">
                 @endif
                 <div class="portfolio-info">
                   <h4>{{ $project->name }}</h4>
@@ -248,7 +248,7 @@
                         @endforeach
                     </p>
                   <div class="portfolio-links">
-                    <a href="{{ asset('projects/' . $project->name .'/' . $project->images()->first()->url) }}" data-gallery="portfolioGallery"
+                    <a href="{{ asset('storage/projects/' . $project->name .'/' . $project->images()->first()->url) }}" data-gallery="portfolioGallery"
                         class="portfolio-lightbox" title="{{ $project->name }}"><i class="bx bx-plus"></i></a>
                     <a href="{{ route('projects.project', ['project' => $project]) }}" title="Plus de détails"><i class="bx bx-link"></i></a>
                   </div>

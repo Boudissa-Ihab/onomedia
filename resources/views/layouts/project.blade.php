@@ -13,8 +13,8 @@
     <meta name="keywords" content="ono design, content, advertisement, design, logos">
 
     <!-- Favicons -->
-    <link href="@setting('logo')" rel="icon">
-    <link href="@setting('logo')" rel="apple-touch-icon">
+    <link href="{{ asset("storage/logo/logo.webp") }}" rel="icon">
+    <link href="{{ asset("storage/logo/logo.webp") }}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -87,7 +87,9 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-info">
-                            <a href="{{ route('home') }}#hero"><img src={{ asset("logo/@setting('logo')") }}></a>
+                            <a href="{{ route('home') }}#hero">
+                                <img src={{ asset("storage/logo/logo.webp") }} style="max-height: 170px; width: auto;">
+                            </a>
                             <p>
                                 @setting('address')<br><br>
                                 <strong>N<sup>0</sup> de téléphone:</strong> @setting('phone')<br>
@@ -103,6 +105,11 @@
                         </div>
                     </div>
 
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Description</h4>
+                        <p>@setting('description')</p>
+                    </div>
+
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Liens utiles</h4>
                         <ul>
@@ -115,9 +122,7 @@
 
                     @livewire('client.projects-component')
 
-                    <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <p>@setting('description')</p>
-                    </div>
+                    @livewire('client.availability-component')
                 </div>
             </div>
         </div>
