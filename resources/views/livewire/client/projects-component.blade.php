@@ -1,4 +1,4 @@
-<div class="col-lg-3 col-md-6 footer-links">
+<div class="col-lg-2 col-md-6 footer-links">
     <h4>Nos projets</h4>
     <ul>
         @foreach($this->projects as $project)
