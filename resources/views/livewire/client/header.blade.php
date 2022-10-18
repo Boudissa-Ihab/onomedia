@@ -3,7 +3,7 @@
     <div class="container d-flex align-items-center justify-content-lg-between">
         <h1 class="logo me-auto me-lg-0">
             <a href="{{ route('home') }}">
-                <img src={{ asset("storage/logo/Logo.webp") }} style="max-height: 170px; width: auto;">
+                <img src={{ asset("storage/logo/Logo.webp") }} style="max-height: 80px; width: auto;">
             </a>
         </h1>
         <!-- Uncomment below if you prefer to use an image logo -->
