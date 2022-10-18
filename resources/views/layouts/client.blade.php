@@ -13,8 +13,8 @@
     <meta name="keywords" content="ono design, content, advertisement, design, logos">
 
     <!-- Favicons -->
-    <link href="{{ asset("storage/logo/logo.webp") }}" rel="icon">
-    <link href="{{ asset("storage/logo/logo.webp") }}" rel="apple-touch-icon">
+    <link href="{{ asset("storage/logo/Logo.webp") }}" rel="icon">
+    <link href="{{ asset("storage/logo/Logo.webp") }}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link

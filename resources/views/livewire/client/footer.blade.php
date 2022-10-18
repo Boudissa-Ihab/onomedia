@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-info">
-                        <a href="#hero"><img src={{ asset("storage/logo/logo.webp") }}
+                        <a href="#hero"><img src={{ asset("storage/logo/Logo.webp") }}
                             style="max-height: 170px; width: auto;"></a>
                         <p>
                             @setting('address')<br><br>

@@ -85,10 +85,10 @@
                     </div>
                     <div class="card-body text-center">
                         @if($temporaryLogo && !$logo)
-                            <img src="{{ asset('storage/logo/' .$temporaryLogo) }}" alt="{{ setting('app_name', "Ono Design") }}" class="img-fluid rounded-circle mb-2" />
+                            <img src="{{ asset('storage/logo/' .$temporaryLogo) }}" alt="{{ setting('app_name', "Ono Design") }}" class="img-fluid mb-2" />
                         @endif
                         @if($logo)
-                            <img src="{{ $logo->temporaryUrl() }}" class="img-fluid rounded-circle mb-2" alt="{{ setting('app_name', "Ono Design") }}">
+                            <img src="{{ $logo->temporaryUrl() }}" class="img-fluid mb-2" alt="{{ setting('app_name', "Ono Design") }}">
                         @endif
                         <form method="POST" enctype="multipart/form-data">
                             <div class="file-upload blue-btn btn width100">

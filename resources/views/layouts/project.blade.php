@@ -13,8 +13,8 @@
     <meta name="keywords" content="ono design, content, advertisement, design, logos">
 
     <!-- Favicons -->
-    <link href="{{ asset("storage/logo/logo.webp") }}" rel="icon">
-    <link href="{{ asset("storage/logo/logo.webp") }}" rel="apple-touch-icon">
+    <link href="{{ asset("storage/logo/Logo.webp") }}" rel="icon">
+    <link href="{{ asset("storage/logo/Logo.webp") }}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -88,7 +88,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-info">
                             <a href="{{ route('home') }}#hero">
-                                <img src={{ asset("storage/logo/logo.webp") }} style="max-height: 170px; width: auto;">
+                                <img src={{ asset("storage/logo/Logo.webp") }} style="max-height: 170px; width: auto;">
                             </a>
                             <p>
                                 @setting('address')<br><br>
