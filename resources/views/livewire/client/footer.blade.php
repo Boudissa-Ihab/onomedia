@@ -7,8 +7,8 @@
                     <div class="footer-info">
                         <a href="#hero"><img src={{ asset("storage/logo/Logo.webp") }}
                             style="max-height: 80px; width: auto;"></a>
-                        <p>
-                            @setting('address')<br><br>
+                        <p class="mt-3">
+                            @setting('address')<br>
                             <strong>N<sup>0</sup> de téléphone:</strong> @setting('phone')<br>
                             <strong>Email:</strong> @setting('email')<br>
                         </p>
