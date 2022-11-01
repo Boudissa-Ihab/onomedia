@@ -108,7 +108,7 @@ class Settings extends Component
     public function updatedLogo()
     {
         if($this->validate([
-            'logo' => 'required|image|mimes:jpeg,png,jpg,svg,webp,bmp|max:2048'
+            'logo' => 'required|image|mimes:jpeg,png,jpg,svg,webp,bmp|max:50000'
         ]))
         {
             try {

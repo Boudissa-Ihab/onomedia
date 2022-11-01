@@ -112,7 +112,7 @@ class Profile extends Component
     public function updatedAvatar()
     {
         if($this->validate([
-            'avatar' => 'required|image|mimes:jpeg,png,jpg,svg,webp,bmp|max:2048'
+            'avatar' => 'required|image|mimes:jpeg,png,jpg,svg,webp,bmp|max:10000'
         ]))
         {
             try {

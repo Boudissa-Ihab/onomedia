@@ -44,7 +44,7 @@ class EditProject extends Component
             'selectCategories' => 'required|array',
             'selectCategories.*' => 'exists:App\Models\Category,id',
             'selectPhotos' => 'nullable|array',
-            'selectPhotos.*' => 'required|image|mimes:jpeg,png,jpg,svg,webp,bmp|max:20000'
+            'selectPhotos.*' => 'required|image|mimes:jpeg,png,jpg,svg,webp,bmp|max:100000'
         ];
     }
 
@@ -63,7 +63,7 @@ class EditProject extends Component
         'selectCategories.exists' => "Veuillez ajouter une catégorie valide",
         'selectPhotos.image' => "Le fichier doit être une image valide",
         'selectPhotos.mimes' => "L'extension de l'image doit être l'une des suivantes: .jpeg,.png,.jpg,.svg,.webp,.bmp",
-        'selectPhotos.max' => "La taille de l'image ne doit pas dépasser 20 Mo"
+        'selectPhotos.max' => "La taille de l'image ne doit pas dépasser 100 Mo"
     ];
 
     public function mount()
@@ -140,7 +140,6 @@ class EditProject extends Component
                     return redirect()->route('admin.projects');
                 });
             } catch(Throwable $th) {
-                dd($th);
                 $this->emit('showAlert', [
                     "title" => "Echec de la modification",
                     "text" => "Impossible de modifier ce projet",
@@ -181,6 +180,7 @@ class EditProject extends Component
 
     public function updatedSelectPhotos()
     {
+        dd("here");
         if($this->validate())
         {
             try {
