@@ -14,31 +14,31 @@
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-store-line"></i>
-            <h3><a href="javascript:void(0)">Lorem Ipsum</a></h3>
+            <h3><a href="javascript:void(0)">E-Marketing</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-bar-chart-box-line"></i>
-            <h3><a href="javascript:void(0)">Dolor Sitema</a></h3>
+            <h3><a href="javascript:void(0)">Création graphique</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
-            <i class="ri-calendar-todo-line"></i>
-            <h3><a href="javascript:void(0)">Sedare Perspiciatis</a></h3>
+            <i class="ri-window-line"></i>
+            <h3><a href="javascript:void(0)">Création site web</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
-            <i class="ri-paint-brush-line"></i>
-            <h3><a href="javascript:void(0)">Magni Dolores</a></h3>
+            <i class="ri-discuss-line"></i>
+            <h3><a href="javascript:void(0)">Conseil en communication</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
-            <i class="ri-database-2-line"></i>
-            <h3><a href="javascript:void(0)">Nemos Enimade</a></h3>
+            <i class="ri-profile-line"></i>
+            <h3><a href="javascript:void(0)">Identité digitale</a></h3>
           </div>
         </div>
       </div>
@@ -62,8 +62,18 @@
                 @setting('app_name', 'Ono Design') est une agence de communication spécialisée dans la design graphique, le conseil et la création de sites web.
             </p>
             <p class="fst-italic">
-                Aujourd’hui, l’image d’une entreprise dépend fortement de sa présence sur Internet.<br>
-                Notre objectif est de répondre aux attentes de nos clients et de les voir satisfaits.
+                Aujourd’hui, l’image d’une entreprise dépend fortement de sa présence sur Internet, et afin de se distinguer des autres,
+                l'entreprise a besoin d'une identité digitale (site web, publicités etc...) pour la représenter.
+            </p>
+            <p class="fst-italic">
+                <b>Notre mission</b> : réaliser une communication sur mesure adaptée à vos besoins et votre budget afin de vous aider à être ouvert à d'immenses possibilités<br>
+                <b>Notre objectif</b> : répondre aux attentes de nos clients et de les voir satisfaits.<br>
+                Et voici quelques services que nous proposons :
+                <ol>
+                    <li>Communication digitale et mise en place d’une stratégie réseaux sociaux et web.</li>
+                    <li>Conseil en communication pour des entreprises et des institutionnels.</li>
+                    <li>Réalisation de tous vos supports et compagnes publicitaires.</li>
+                </ol>
             </p>
             {{-- <ul>
               <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
@@ -109,24 +119,21 @@
           <div class="image col-lg-6" style='background-image: url("{{ asset('images/img/features.jpg') }}");' data-aos="fade-right"></div>
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
             <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-receipt"></i>
-              <h4>Est labore ad</h4>
-              <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+              <i class="bx bx-group"></i>
+              <h4>Equipe expérimentée</h4>
+              <p>L’équipe de notre agence de communication est passionnée, curieuse, créative et prête à répondre à tous vos besoins.
+            </p>
             </div>
             <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
               <i class="bx bx-cube-alt"></i>
-              <h4>Harum esse qui</h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              <h4>Clientèle fidèle</h4>
+              <p>Nous avons reçu des retours positives de la part de tous les clients que nous avons travaillé avec,
+                ce qui nous pousse toujours à travailler dûr et tout donner.</p>
             </div>
             <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-images"></i>
-              <h4>Aut occaecati</h4>
-              <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-shield"></i>
-              <h4>Beatae veritatis</h4>
-              <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+              <i class="bx bx-book-bookmark"></i>
+              <h4>Expertise</h4>
+              <p>La création de notre agence de communication remonte à <b>2015</b>. Son savoir-faire et son expérience lui permettent de créer des campagnes de communication innovantes et performantes</p>
             </div>
           </div>
         </div>
@@ -204,9 +211,9 @@
       <div class="container" data-aos="zoom-in">
 
         <div class="text-center">
-          <h3>Call To Action</h3>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="cta-btn" href="#">Call To Action</a>
+          <h3>Appel à l'Action</h3>
+          <p>Vous trouverez ici nos informations de contact pour en savoir plus sur nos offres et nos services, n'hésitez pas à nous laisser un message ou nous appeler.</p>
+          <a class="cta-btn" href="#contact-button">Cliquez ici !</a>
         </div>
 
       </div>
@@ -252,11 +259,13 @@
                             @endif
                         @endforeach
                     </p>
-                  <div class="portfolio-links">
-                    <a href="{{ asset('storage/projects/' . $project->name .'/' . $project->images()->first()->url) }}" data-gallery="portfolioGallery"
-                        class="portfolio-lightbox" title="{{ $project->name }}"><i class="bx bx-plus"></i></a>
-                    <a href="{{ route('projects.project', ['project' => $project]) }}" title="Plus de détails"><i class="bx bx-link"></i></a>
-                  </div>
+                    @if($project->images()->first())
+                        <div class="portfolio-links">
+                            <a href="{{ asset('storage/projects/' . $project->name .'/' . $project->images()->first()->url) }}" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox" title="{{ $project->name }}"><i class="bx bx-plus"></i></a>
+                            <a href="{{ route('projects.project', ['project' => $project]) }}" title="Plus de détails"><i class="bx bx-link"></i></a>
+                        </div>
+                    @endif
                 </div>
               </div>
             </div>
@@ -273,9 +282,9 @@
           <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
           <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
             <div class="content d-flex flex-column justify-content-center">
-              <h3>Voluptatem dignissimos provident quasi</h3>
+              <h3>Nos défis</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Durant tous nos années de pratique, nous avons travaillé sur divers projets, et chaque projet présente ses propres défis, mais ceci nous pousse à tout donner.
               </p>
               <div class="row">
                 {{-- <div class="col-md-6 d-md-flex align-items-md-stretch">
@@ -290,7 +299,17 @@
                   <div class="count-box">
                     <i class="bi bi-journal-richtext"></i>
                     <span data-purecounter-start="0" data-purecounter-end="{{ $this->projects->count() }}" data-purecounter-duration="2" class="purecounter"></span>
-                    <p><strong>Projets</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan</p>
+                    <p><strong>Projets</strong> avec un total de <b>{{ $this->categories->count() }}</b> catégories, on peut les mentionner ici :
+                        <b>
+                            @foreach ($this->categories as $category)
+                                @if ($loop->last)
+                                    {{ $category->name }}
+                                @else
+                                    {{ $category->name }}/
+                                @endif
+                            @endforeach
+                        </b>
+                    </p>
                   </div>
                 </div>
 
@@ -318,7 +337,7 @@
     </section><!-- End Counts Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    {{-- <section id="testimonials" class="testimonials">
       <div class="container" data-aos="zoom-in">
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -335,7 +354,7 @@
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -348,7 +367,7 @@
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -361,7 +380,7 @@
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -374,7 +393,7 @@
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -387,13 +406,13 @@
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section> --}}
 
     <!-- ======= Team Section ======= -->
     {{-- <section id="team" class="team">
@@ -571,7 +590,7 @@
                         <strong>{{ session()->get('error') }}</strong>
                     </div>
                 @endif
-              <div class="text-center"><button type="submit" wire:ignore.self>Envoyer</button></div>
+              <div class="text-center" id="contact-button"><button type="submit" wire:ignore.self>Envoyer</button></div>
             </form>
           </div>
         </div>

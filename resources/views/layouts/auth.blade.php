@@ -11,7 +11,8 @@
         Linkedin : https://www.linkedin.com/in/ihab-boudissa-727346176/">
     <meta name="keywords" content="ono design, content, advertisement, design, logos">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="{{ asset("storage/logo/logo.webp") }}" rel="icon">
+    <link href="{{ asset("storage/logo/Logo.webp") }}" rel="icon">
+    <link href="{{ asset("storage/logo/Logo.webp") }}" rel="apple-touch-icon">
     <link rel="canonical" href="https://demo-basic.adminkit.io/pages-sign-in.html" />
     <title>@setting('app_name', "Ono Design")</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
