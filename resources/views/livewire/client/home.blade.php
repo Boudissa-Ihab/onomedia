@@ -38,7 +38,7 @@
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-profile-line"></i>
-            <h3><a href="javascript:void(0)">Identité digitale</a></h3>
+            <h3><a href="javascript:void(0)">Identité visuelle</a></h3>
           </div>
         </div>
       </div>
@@ -96,14 +96,22 @@
 
         <div class="clients-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="{{ asset('images/img/clients/client-1.png') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('images/img/clients/client-2.png') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('images/img/clients/client-3.png') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('images/img/clients/client-4.png') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('images/img/clients/client-5.png') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('images/img/clients/client-6.png') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('images/img/clients/client-7.png') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('images/img/clients/client-8.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/img/brands/1.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/img/brands/2.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/img/brands/3.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/img/brands/4.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/img/brands/5.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/img/brands/6.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/img/brands/7.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/img/brands/8.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/img/brands/9.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/img/brands/10.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/img/brands/11.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/img/brands/12.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/img/brands/13.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/img/brands/14.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/img/brands/15.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ asset('images/img/brands/16.png') }}" class="img-fluid" alt=""></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -133,7 +141,7 @@
             <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
               <i class="bx bx-book-bookmark"></i>
               <h4>Expertise</h4>
-              <p>La création de notre agence de communication remonte à <b>2015</b>. Son savoir-faire et son expérience lui permettent de créer des campagnes de communication innovantes et performantes</p>
+              <p>La création de notre agence de communication remonte à <b>2013</b>. Son savoir-faire et son expérience lui permettent de créer des campagnes de communication innovantes et performantes</p>
             </div>
           </div>
         </div>
@@ -298,7 +306,7 @@
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="bi bi-journal-richtext"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="{{ $this->projects->count() }}" data-purecounter-duration="2" class="purecounter"></span>
+                    <span>+500</span>
                     <p><strong>Projets</strong> avec un total de <b>{{ $this->categories->count() }}</b> catégories, on peut les mentionner ici :
                         <b>
                             @foreach ($this->categories as $category)
@@ -316,8 +324,8 @@
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="bi bi-clock"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="4" class="purecounter"></span>
-                    <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel</p>
+                    <span data-purecounter-start="0" data-purecounter-end="{{ date('Y') - 2013 }}" data-purecounter-duration="3" class="purecounter"></span>
+                    <p><strong>ans d'expérience</strong> avec une dizaine de clients satisfaits</p>
                   </div>
                 </div>
 
