@@ -66,6 +66,8 @@ class Home extends Component
                 session()->flash("error", "Impossible d'envoyer ce message, veuillez réessayer");
             }
         }
+        else
+            session()->flash("error", "Veuillez remplir les informations nécessaires");
     }
     /*** Contact us ***/
 

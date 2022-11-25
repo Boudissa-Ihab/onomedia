@@ -512,7 +512,7 @@
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-up" wire:ignore.self>
 
         <div class="section-title">
           <h2>Contact</h2>
@@ -588,13 +588,29 @@
                 @enderror
               </div>
                 @if(session()->has('success'))
-                    <div class="sent-message" x-data="{show: true}"
+                    {{-- <div class="sent-message" x-data="{show: true}"
                         x-init="setTimeout(() => show = false, 5000)" x-show="show">
+                        <strong>{{ session()->get('success') }}</strong>
+                    </div> --}}
+                    <div style="
+                    color: #fff;
+                    background: #18d26e;
+                    text-align: center;
+                    padding: 15px;
+                    font-weight: 600;
+                    margin: 15px;" {{-- x-data="{show: true}"
+                        x-init="setTimeout(() => show = false, 5000)" x-show="show" --}}>
                         <strong>{{ session()->get('success') }}</strong>
                     </div>
                 @elseif (session()->has('error'))
-                    <div class="error-message" x-data="{show: true}"
-                        x-init="setTimeout(() => show = false, 5000)" x-show="show">
+                    <div style="
+                    color: #fff;
+                    background: #ed3c0d;
+                    text-align: left;
+                    padding: 15px;
+                    font-weight: 600;
+                    margin: 15px;" {{-- x-data="{show: true}"
+                        x-init="setTimeout(() => show = false, 5000)" x-show="show" --}}>
                         <strong>{{ session()->get('error') }}</strong>
                     </div>
                 @endif
